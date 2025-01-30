@@ -15,7 +15,6 @@
             <a href="index.html" > Home</a>
             <a href="Skills.html" class="active"  >Skills</a>
             <a href="Education.html" >Education</a>
-            <a href="#" >Experience</a>
             <a href="#" >Contact</a>
             </nav>
         </header>
@@ -23,7 +22,7 @@
 
     <section class = "skills">
         <div class = "skills-title">
-            <h1>My skills</h1>
+            <h1 id = "SkillsText"></h1>
         </div>
         <div class = "skills-text">
             <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -33,27 +32,40 @@
         <div class = "container-skills">
             <div class = "skills-1">
                 <p><span>HTML</span>50%</p>
-                <div class = "progress" style= "--wth:50%"></div>
+                <div class = "progress" style= "--wth: 50%"></div>
             </div>
             <div class = "skills-1">
                 <p><span>CSS</span>30%</p>
-                <div class = "progress" style= "--wth:30%"></div>
+                <div class = "progress" style= "--wth: 30%"></div>
             </div>
             <div class = "skills-1">
                 <p><span>JS</span>10%</p>
-                <div class = "progress" style= "--wth:10%"></div>
+                <div class = "progress" style= "--wth: 10%"></div>
             </div>
             <div class = "skills-1">
-                <p><span>Automation</span>1%</p>
-                <div class = "progress" style= "--wth:1%"></div>
+                <p><span>Automation</span>100%</p>
+                <div class = "progress" style= "--wth: 100%"></div>
             </div>
             <div class = "skills-1">
                 <p><span>Phyton</span>20%</p>
-                <div class = "progress" style= "--wth:20%"></div>
+                <div class = "progress" style= "--wth: 20%"></div>
             </div>
 
         </div>
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const progressBars = document.querySelectorAll('.progress');
+                progressBars.forEach(barra => {
+                    const porcentajeObjetivo = barra.style.getPropertyValue('--wth');
 
+                    barra.style.setProperty('--wth', '0%');
+                    setTimeout(() => {
+                        barra.style.setProperty('--wth', porcentajeObjetivo);
+                    }, 100); 
+                });
+            });
+        </script>
     </section> 
 </body>      
         
