@@ -304,7 +304,7 @@ a.btn:nth-of-type(2) {
     top: 0;
     width: var(--wth, 0%); 
     height: 100%;
-    background: #8125d6;
+    background: #340064;
     transition: width 2s ease; 
 }
 
@@ -418,3 +418,15 @@ a.btn:nth-of-type(2) {
     padding: 0;
     overflow-y: hidden;
 }
+
+/*Contact*/
+
+.contact-b{
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+}
+
+

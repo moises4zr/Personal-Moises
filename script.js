@@ -24,6 +24,10 @@ if (document.getElementById("SkillsText")) {
     escribirTexto("My skills", "SkillsText");
 }
 
+//para el form//
+if (document.getElementById("title-form")) {
+    escribirTexto("Contact Me!", "title-form");
+}
 //funcion cambio de tema
 const botonTema = document.getElementById('cambiar-tema');
 botonTema.addEventListener('click', function() {
