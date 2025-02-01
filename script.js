@@ -28,14 +28,23 @@ if (document.getElementById("SkillsText")) {
 if (document.getElementById("title-form")) {
     escribirTexto("Contact Me!", "title-form");
 }
+
+//para education//
+if (document.getElementById("title-edu")) {
+    escribirTexto("My Education and Experience", "title-edu");
+}
+
 //funcion cambio de tema
 const botonTema = document.getElementById('cambiar-tema');
 botonTema.addEventListener('click', function() {
     document.body.classList.toggle('white-theme');
 }); 
 
-    //Esta funcion por alguna razon no me funciona al ejecutarla aca, la tengo que ejecutar en el html
-    document.addEventListener('DOMContentLoaded', () => {
+
+
+
+//Esta funcion por alguna razon no me funciona al ejecutarla aca, la tengo que ejecutar en el html
+document.addEventListener('DOMContentLoaded', () => {
         const progressBars = document.querySelectorAll('.progress');
         progressBars.forEach(barra => {
             const porcentajeObjetivo = barra.style.getPropertyValue('--wth');
